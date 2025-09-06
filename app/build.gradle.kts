@@ -22,6 +22,10 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -45,6 +49,10 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:5.1.0")
     implementation("com.github.bumptech.glide:glide:5.0.4")
     annotationProcessor("com.github.bumptech.glide:compiler:5.0.4")
+    implementation("com.google.android.material:material:1.13.0") // 包含 TabLayout
+    implementation("androidx.viewpager2:viewpager2:1.1.0") // ViewPager2
+    implementation("androidx.fragment:fragment:1.8.9") // Fragment 支持
     implementation("androidx.recyclerview:recyclerview:1.4.0")
-    implementation("com.google.android.material:material:1.13.0")
+    implementation("com.github.bumptech.glide:glide:5.0.4")
+    implementation("androidx.core:core:1.17.0")
 }
