@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaterWaveProgressView">
+        <attr name="maxProgress" format="integer" />
+        <attr name="currentProgress" format="integer" />
+        <attr name="waveColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="waveAmplitude" format="dimension" />
+        <attr name="waveFrequency" format="float" />
+    </declare-styleable>
+</resources>

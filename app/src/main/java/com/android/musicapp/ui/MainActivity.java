@@ -48,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+    }
+
+    @Override
       protected void onStop() {
           super.onStop();
       }
